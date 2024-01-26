@@ -80,6 +80,15 @@ Common styles
   text-transform: uppercase;
 }
 
+.bot-text {
+  color: $minor-text-color;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
 .button-style {
   color: $primary-text-color;
   font-family: Inter;
@@ -502,14 +511,7 @@ fifty fifty
         font-weight: 500;
         line-height: normal;
       }
-      .bot-text {
-        color: $minor-text-color;
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%; /* 28.8px */
-      }
+
       .stat-cont {
         display: flex;
         width: 551px;
@@ -569,21 +571,77 @@ Section 3
     background: #f1f1f1;
     border-radius: 24px;
     margin: 50px;
-    height: 938px;
+    height: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    padding-top: 112px;
     display: flex;
+    justify-content: space-evenly;
+    input,
+    select {
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid var(--Primary-brand-3, #6b7079);
+      background: var(--Neutrals-white, #fff);
+      display: flex;
+      padding: 10.5px 12px;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      color: #000;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    label {
+      color: #000;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      padding-bottom: 5px;
+    }
+    .button-style {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .button-style {
+      color: $secondary-text-color;
+      background: #ff5b01;
+      margin-top: 25px;
+    }
+    .button-style:hover {
+      color: $secondary-text-color;
+      background: $primary-text-color;
+    }
+    .small-title {
+      color: $primary-text-color;
+    }
+    .great-text {
+      font-size: 64px;
+      line-height: 70px;
+      margin: 0px;
+    }
     .form {
       &__left {
-        flex: 4;
+        width: 35%;
       }
       &__right {
-        flex: 5;
+        width: 45%;
         .form-row {
           display: flex;
           :first-child {
             flex: 1;
+            padding-right: 12.5px;
           }
           :nth-child(2) {
             flex: 1;
+            padding-left: 12.5px;
           }
         }
         .form-row-full {

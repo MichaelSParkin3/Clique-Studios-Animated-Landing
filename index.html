@@ -209,14 +209,14 @@
           <div class="form__left">
             <p class="small-title">Form Field CallOUT IPSUM</p>
             <h2 class="great-text">A simple headline facu consecteur</h2>
-            <p class="mid-text">
+            <p class="bot-text">
               Nisi a id sit pulvinar non. Quis tristique et sem cras morbi
               lacus. Magna faucibus ultrices sed consectetur risus et amet.
             </p>
           </div>
           <div class="form__right">
             <form action="/action_page.php" method="get">
-              <div class="form-row">
+              <div class="form-row" style="height: 100px">
                 <div class="form-item">
                   <label for="fname">First name</label>
                   <input type="text" id="fname" name="fname" /><br /><br />
@@ -262,9 +262,15 @@
               </div>
               <div class="form-row-full">
                 <label for="fname">Message</label>
-                <input type="text" id="fname" name="fname" />
+                <input
+                  style="height: 100px"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                />
               </div>
-              <input type="submit" value="Submit" />
+
+              <button class="button-style">Submit</button>
             </form>
           </div>
         </div>
