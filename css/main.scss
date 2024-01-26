@@ -570,6 +570,32 @@ Section 3
     border-radius: 24px;
     margin: 50px;
     height: 938px;
+    display: flex;
+    .form {
+      &__left {
+        flex: 4;
+      }
+      &__right {
+        flex: 5;
+        .form-row {
+          display: flex;
+          :first-child {
+            flex: 1;
+          }
+          :nth-child(2) {
+            flex: 1;
+          }
+        }
+        .form-row-full {
+          display: flex;
+          flex-direction: column;
+        }
+        .form-item {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
 

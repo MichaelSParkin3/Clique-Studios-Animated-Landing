@@ -517,6 +517,30 @@ Section 3
   border-radius: 24px;
   margin: 50px;
   height: 938px;
+  display: flex;
+}
+.main-section-3__inner .form__left {
+  flex: 4;
+}
+.main-section-3__inner .form__right {
+  flex: 5;
+}
+.main-section-3__inner .form__right .form-row {
+  display: flex;
+}
+.main-section-3__inner .form__right .form-row :first-child {
+  flex: 1;
+}
+.main-section-3__inner .form__right .form-row :nth-child(2) {
+  flex: 1;
+}
+.main-section-3__inner .form__right .form-row-full {
+  display: flex;
+  flex-direction: column;
+}
+.main-section-3__inner .form__right .form-item {
+  display: flex;
+  flex-direction: column;
 }
 
 /*
