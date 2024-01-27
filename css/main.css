@@ -8,6 +8,10 @@ Font Imports
   font-family: "Inter";
   src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Akkurat Pro";
+  src: url("../fonts/Akkurat-Font/Akkurat.ttf") format("truetype");
+}
 /*
 ------------
 Variables
@@ -610,5 +614,84 @@ Footer
 */
 footer {
   background: #1a1a1a;
-  height: 489px;
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: space-between;
+}
+footer .button-style {
+  color: #fff;
+  background: #ff5b01;
+  text-decoration-line: none;
+}
+footer .button-style:hover {
+  color: #fff;
+  background: #000;
+}
+footer .footer-left__top img {
+  margin-bottom: 30px;
+}
+footer .footer-left__top ul {
+  list-style-type: none;
+  padding: 0px;
+}
+footer .footer-left__top ul li {
+  color: #fff;
+  font-family: "Akkurat Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  text-decoration-line: underline;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+footer .footer-left__bottom {
+  margin-top: 110px;
+  color: #fff;
+  font-family: "Akkurat Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+footer .footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-right__top {
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  align-items: center;
+  color: #fff;
+  font-family: Campton;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+footer .footer-right__bottom {
+  display: flex;
+  margin-left: auto;
+  margin-top: 110px;
+  align-items: center;
+  color: #fff;
+  text-align: right;
+  font-family: Campton;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 625;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+footer .footer-right__bottom .social-cont {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

@@ -10,6 +10,11 @@ Font Imports
     format("truetype");
 }
 
+@font-face {
+  font-family: "Akkurat Pro";
+  src: url("../fonts/Akkurat-Font/Akkurat.ttf") format("truetype");
+}
+
 @import url("https://fonts.cdnfonts.com/css/campton");
 
 /*
@@ -668,5 +673,88 @@ Footer
 
 footer {
   background: #1a1a1a;
-  height: 489px;
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  color: $secondary-text-color;
+  justify-content: space-between;
+  .button-style {
+    color: $secondary-text-color;
+    background: #ff5b01;
+    text-decoration-line: none;
+  }
+  .button-style:hover {
+    color: $secondary-text-color;
+    background: $primary-text-color;
+  }
+  .footer-left {
+    &__top {
+      img {
+        margin-bottom: 30px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        li {
+          color: #fff;
+          font-family: "Akkurat Pro";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 22.4px */
+          text-decoration-line: underline;
+          padding-top: 3px;
+          padding-bottom: 3px;
+        }
+      }
+    }
+    &__bottom {
+      margin-top: 110px;
+      color: #fff;
+      font-family: "Akkurat Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+    }
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__top {
+      display: flex;
+      justify-content: space-around;
+      width: 900px;
+      align-items: center;
+      color: #fff;
+      font-family: Campton;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+    &__bottom {
+      display: flex;
+      margin-left: auto;
+      margin-top: 110px;
+      align-items: center;
+      color: #fff;
+      text-align: right;
+      font-family: Campton;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 625;
+      line-height: normal;
+      letter-spacing: 2.88px;
+      text-transform: uppercase;
+      .social-cont {
+        display: flex;
+        align-items: center;
+        width: 225px;
+        justify-content: space-between;
+      }
+    }
+  }
 }
