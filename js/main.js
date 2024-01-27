@@ -137,7 +137,7 @@ class App {
       scrollTrigger: {
         trigger: ".about-us",
         start: "center center",
-        endTrigger: ".fifty-fifty",
+        endTrigger: ".main-section-2__bg",
         end: "bottom center",
         scroll: true,
         scrub: true,
@@ -146,7 +146,7 @@ class App {
     });
 
     this.imageStack.forEach((img, index) => {
-      const multi = 150 + 50 * index;
+      const multi = 150 + 70 * index;
       tl.to(
         img,
         {
