@@ -375,6 +375,11 @@ Events
         display: flex;
         flex: 1;
         .text-block {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .text-block {
           .minor-text,
           .mid-text {
             color: $primary-text-color;
@@ -781,6 +786,17 @@ Resposive
 */
 
 @media (max-width: 1400px) {
+  .main-section-1 {
+    .small-title {
+      font-size: 9px;
+    }
+    .mid-text {
+      font-size: 15px;
+    }
+    .minor-text {
+      font-size: 13px;
+    }
+  }
   .main-section-2 {
     &__inner {
       height: 2200px;
@@ -796,15 +812,35 @@ Resposive
   }
 }
 
-@media (max-width: 1900px) {
-  .main-section-2 {
+@media (max-width: 1200px) {
+  // .main-section-1 {
+  //   .small-title {
+  //     font-size: 7px;
+  //   }
+  //   .mid-text {
+  //     font-size: 12px;
+  //   }
+  //   .minor-text {
+  //     font-size: 10px;
+  //   }
+  // }
+  .main-section-3 {
     &__inner {
-      .fifty-fifty {
-        &__left {
-          &__img {
-          }
-        }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .form__left {
+        width: 70%;
       }
+      .form__right {
+        width: 70%;
+        margin-top: 30px;
+      }
+    }
+  }
+  footer {
+    .footer-right__top {
+      visibility: hidden;
     }
   }
 }

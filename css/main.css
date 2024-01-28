@@ -340,6 +340,11 @@ Section 1
   display: flex;
   flex: 1;
 }
+.main-section-1__inner .events__inner-block .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .main-section-1__inner .events__inner-block .text-block .minor-text,
 .main-section-1__inner .events__inner-block .text-block .mid-text {
   color: #000;
@@ -719,6 +724,15 @@ Resposive
 
 */
 @media (max-width: 1400px) {
+  .main-section-1 .small-title {
+    font-size: 9px;
+  }
+  .main-section-1 .mid-text {
+    font-size: 15px;
+  }
+  .main-section-1 .minor-text {
+    font-size: 13px;
+  }
   .main-section-2__inner {
     height: 2200px;
   }
@@ -727,5 +741,22 @@ Resposive
   }
   .main-section-2__inner .fifty-fifty__left {
     top: 440px;
+  }
+}
+@media (max-width: 1200px) {
+  .main-section-3__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section-3__inner .form__left {
+    width: 70%;
+  }
+  .main-section-3__inner .form__right {
+    width: 70%;
+    margin-top: 30px;
+  }
+  footer .footer-right__top {
+    visibility: hidden;
   }
 }/*# sourceMappingURL=main.css.map */
