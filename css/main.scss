@@ -152,7 +152,7 @@ nav {
     display: flex;
     width: 100%;
     height: 88px;
-    padding: 15px 48px;
+    padding: 0px 48px;
     justify-content: space-between;
     align-items: center;
     &__interact {
@@ -463,10 +463,17 @@ fifty fifty
   .fifty-fifty {
     display: flex;
     width: 90%;
+    justify-content: center;
     &__left {
       flex: 1;
       position: relative;
       top: -200px;
+      left: -100px;
+      .img-cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       &__img {
         flex-shrink: 0;
         border-radius: 48px;
@@ -478,7 +485,7 @@ fifty fifty
         background: url("../img/image\ 4.jpg"),
           $secondary-bg-color 50% / cover no-repeat;
         background-size: cover;
-        transform: translate(0px, 200px);
+        transform: translate(50px, 200px);
       }
       &__img:nth-child(2) {
         width: 283px;
@@ -486,7 +493,7 @@ fifty fifty
         background: url("../img/image\ 5.jpg"),
           $secondary-bg-color 50% / cover no-repeat;
         background-size: cover;
-        transform: translate(340px, 563px);
+        transform: translate(250px, 563px);
         z-index: 1;
       }
       &__img:nth-child(3) {
@@ -495,11 +502,16 @@ fifty fifty
         background: url("../img/image\ 6.jpg"),
           $secondary-bg-color 50% / cover no-repeat;
         background-size: cover;
-        transform: translate(140px, 830px);
+        transform: translate(30px, 830px);
       }
     }
     &__right {
       flex: 1;
+      display: flex;
+      justify-content: center;
+      .text-cont {
+        max-width: 1000px;
+      }
       .top-text {
         color: $primary-text-color;
         font-family: Inter;
@@ -768,17 +780,29 @@ Resposive
 
 */
 
-@media (max-width: 1445px) {
+@media (max-width: 1400px) {
   .main-section-2 {
     &__inner {
-      height: 2100px;
+      height: 2200px;
       .fifty-fifty {
         flex-direction: column;
         &__left {
-          top: 400px;
-          width: 100%;
-          display: flex;
-          justify-content: center;
+          top: 440px;
+          &__img {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .main-section-2 {
+    &__inner {
+      .fifty-fifty {
+        &__left {
+          &__img {
+          }
         }
       }
     }
