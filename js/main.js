@@ -141,7 +141,7 @@ class App {
         end: "bottom center",
         scroll: true,
         scrub: true,
-        markers: true,
+        markers: false,
       },
     });
 
